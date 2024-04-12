@@ -1,4 +1,4 @@
-# swag-labs-selenium-test
+# Swag Labs Automation Testing using Selenium Web Driver
 
 # Adding Highest Price Item to the Cart
 
