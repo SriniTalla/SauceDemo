@@ -1,4 +1,4 @@
-# swag-labs-selenium-test
+# Swag Labs Automation Testing using Selenium Web Driver
 
 # Adding Highest Price Item to the Cart
 
@@ -14,4 +14,4 @@
 - **And** I click on the cart icon
 - **Then** I should see the product successfully added
 
-<img width="1509" alt="image" src="https://github.com/naveenkanak2024/swag-labs-selenium-test/assets/164809276/0089ae4e-2354-48d3-a2ca-243160981682">
+<img width="1774" alt="Report" src="https://github.com/SriniTalla/SauceDemo/assets/22282628/7a07f031-8a9a-4b81-9880-c6c817109704">
