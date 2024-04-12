@@ -14,4 +14,5 @@
 - **And** I click on the cart icon
 - **Then** I should see the product successfully added
 
-<img width="1774" alt="Report" src="https://github.com/SriniTalla/SauceDemo/assets/22282628/7a07f031-8a9a-4b81-9880-c6c817109704">
+<img width="1644" alt="Cucumber Report" src="https://github.com/SriniTalla/SauceDemo/assets/22282628/d3867fa6-74b7-45ea-a537-091fb239638f">
+
