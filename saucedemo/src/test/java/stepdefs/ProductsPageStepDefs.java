@@ -7,7 +7,6 @@ import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import pages.BasePage;
 import pages.ProductsPage;
-
 import java.util.Collections;
 import java.util.HashMap;
 
@@ -20,6 +19,7 @@ public class ProductsPageStepDefs extends BasePage {
         Assert.assertEquals(productsPage.getPageHeading(), "Products");
         captureScreenshot();
     }
+
     @When("I click on \"ADD TO CART\" button corresponding highest price")
     public void i_click_on_button_corresponding_highiest_price() {
 
@@ -30,7 +30,18 @@ public class ProductsPageStepDefs extends BasePage {
         highestPriceItemName = (String) (maxPriceItem.keySet().toArray())[0];
         log("Highest price item name : "+highestPriceItemName);
         maxPriceItem.get(highestPriceItemName).click();
+    }
 
+    @When("I click on \"ADD TO CART\" button corresponding lowest price")
+    public void i_click_on_button_corresponding_lowest_price() {
+
+        inventoryItemData = productsPage.collectPriceMappedToInventory();
+        lowestPrice = Collections.min(inventoryItemData.keySet());
+        log("Lowest price : "+lowestPrice);
+        HashMap<String, WebElement> maxPriceItem = inventoryItemData.get(lowestPrice);
+        lowestPriceItemName = (String) (maxPriceItem.keySet().toArray())[0];
+        log("Lowest price item name : "+lowestPriceItemName);
+        maxPriceItem.get(lowestPriceItemName).click();
     }
 
     @When("I click on cart icon")

@@ -11,9 +11,13 @@ public class ShoppingChartStepDefs extends BasePage {
 
     @Then("I should see the product successfully added")
     public void i_should_see_the_product_successfully_added() {
-
         Assert.assertEquals(shoppingChartPage.getItemName(), highestPriceItemName);
         Assert.assertEquals(shoppingChartPage.getItemPrice(), "$"+highestPrice);
+    }
 
+    @Then("I should see that the product successfully added")
+    public void i_should_see_that_the_product_successfully_added() {
+        Assert.assertEquals(shoppingChartPage.getItemName(), lowestPriceItemName);
+        Assert.assertEquals(shoppingChartPage.getItemPrice(), "$"+lowestPrice);
     }
 }

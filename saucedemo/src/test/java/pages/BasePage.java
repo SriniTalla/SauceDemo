@@ -29,7 +29,9 @@ public class BasePage {
     public static Scenario scenario;
     public static HashMap<Double, HashMap<String, WebElement>> inventoryItemData;
     public static Double highestPrice;
+    public static Double lowestPrice;
     public static String highestPriceItemName;
+    public static String lowestPriceItemName;
     public WebElement waitForElement(WebElement element){
         Wait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(Duration.ofSeconds(10))
