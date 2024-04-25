@@ -11,3 +11,9 @@ Feature: Adding highest price item to the cart
     When I click on "ADD TO CART" button corresponding highest price
     And I click on cart icon
     Then I should see the product successfully added
+
+  Scenario: Adding lowest price item to the cart
+    Given I am on the products page
+    When I click on "ADD TO CART" button corresponding lowest price
+    And I click on cart icon
+    Then I should see that the product successfully added
